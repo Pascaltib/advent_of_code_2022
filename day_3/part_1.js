@@ -1,8 +1,6 @@
 var fs = require('fs');
-const { arrayBuffer } = require('stream/consumers');
 
 let data = fs.readFileSync('data.txt', 'utf8').split("\n");
-console.log(data)
 
 const findScore = (character) => {
   const charCodeNum = character.charCodeAt(0)
